@@ -1,0 +1,88 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  /* height: 85vh; */
+  min-height: 85vh;
+  /* padding: 15rem 0; */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://www.worldatlas.com/r/w768/upload/46/cb/e1/shutterstock-252338818.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: scroll; */
+  background-size: cover;
+  /* overflow: hidden; */
+}
+
+
+
+
+table{
+  /* margin-top: 10px; */
+  margin-left: 50px;
+  width: 84rem;
+  border-collapse: collapse;
+  padding-top: 10px;
+  /* border-radius: 2%; */
+}
+
+.cart-info{
+  display: flow-root;
+  flex-wrap: wrap;
+}
+/* -- .cart-info img{
+  width: 25%;
+  height: 200px;
+--- */
+th{
+  text-align: left;
+  padding: 5px;
+  color: aliceblue;
+  background: rgb(111, 202, 202);
+  font-weight: bold;
+  font-size: larger;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  font-size: larger;
+  font-weight: bold;
+  color: aliceblue;
+}
+td img{
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+td small{
+  font-size: larger;
+  font-weight: bold;
+  color: aliceblue;
+}
+td p {
+  font-size: larger;
+  font-weight: bold;
+  color: aliceblue;
+}
+.price {
+  font-size: larger;
+  font-weight: bold;
+  color: aliceblue;
+}
+.checkout-btn{
+  display: inline-block;
+  background: rgb(111, 202, 202);
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+  margin-left: 50px;
+}
+.small-container cart-page {
+    background: #1c201f;
+}

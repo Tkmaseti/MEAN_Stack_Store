@@ -1,0 +1,62 @@
+.masthead {
+  position: relative;
+  width: 100%;
+  /* height: 85vh; */
+  min-height: 35rem;
+  /* padding: 15rem 0; */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("https://www.worldatlas.com/r/w768/upload/46/cb/e1/shutterstock-252338818.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* overflow: hidden; */
+}
+.card {
+/* background: #5ccbcf; */
+margin: 20px;
+width: 20rem;
+margin-top: 5rem;
+height: 30rem;
+align-items: center;
+margin-left: 75px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  filter: grayscale(0);
+  transition: transform 1s;
+  /* box-shadow: 5px 10px; */
+}
+img {
+  width: 250px;
+  height: 350px;
+  border-radius: 5%;
+}
+p {
+  font-weight: 600;
+  font-size: 20px;
+}
+input{
+  height: 30px;
+  width: 50px;
+  /* height: 10px; */
+}
+.bottom {
+  display: flex;
+}
+label {
+  font-weight: bold;
+}
+button {
+  height: 30px;
+  margin-right: 10px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border: 4px solid red;
+  border-radius: 5%;
+  font-weight: bold;
+}
+

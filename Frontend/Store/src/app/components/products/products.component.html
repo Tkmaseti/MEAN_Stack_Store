@@ -1,0 +1,18 @@
+<div class="masthead">
+  <div class="row">
+    <div class="card col-4" *ngFor="let product of products">
+      <h3 class="card-title">{{product.title}}</h3>
+      <img src="{{product.image}}"  routerLink="/product-detail/{{product.id}}" class="card-img-top" alt="..." >
+      <div class="card-body">
+        <p class="card-text" id="itemInfo">{{product.description}}</p>
+        <label class="price">Price: {{product.price | currency}}</label>
+        <div class="bottom">
+          <button type="button" (click)="addToCart(product)"><i class="material-icons"><i class="fa-solid fa-cart-plus"></i></i></button>
+          <input type="number" placeholder="Qty" id="quantity" >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

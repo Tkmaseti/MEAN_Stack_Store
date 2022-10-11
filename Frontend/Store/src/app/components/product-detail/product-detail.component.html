@@ -1,0 +1,73 @@
+<div class="masthead">
+  <div class="center">
+    <div class="row">
+      <div class="card col-4" *ngIf="product && anItem">
+        <h3 class="card-title">{{product.title}}</h3>
+        <img src="{{product.image}}"  routerLink="/product-detail" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <p class="card-text" id="itemInfo">{{product.description}}</p>
+          <label class="price">Price: {{product.price | currency}}</label>
+          <div class="bottom">
+            <button class="btn btn-danger" (click)="toogleTag()">update</button>
+            <button class="btn btn-danger" (click)="toogleAdd()"> add</button>
+            <button class="btn btn-danger" (click)="delete(product)"> del</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-4" *ngIf="product && showMe">
+        <div class="mb-3">
+          <label for="title" class="col-form-label">Title:</label>
+          <input type="text" class="form-control" id="title" [(ngModel)]="product.title">
+        </div>
+        <div class="mb-3">
+          <label for="description" class="col-form-label">Description:</label>
+          <input type="text" class="form-control" id="description" [(ngModel)]="product.description">
+        </div>
+        <div class="mb-3">
+          <label for="image" class="col-form-label">Image:</label>
+          <input type="text" class="form-control" id="image" [(ngModel)]="product.image">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="col-form-label">Price:</label>
+          <input type="text" class="form-control" id="price" [(ngModel)]="product.price">
+        </div>
+        <div class="mb-3">
+          <label for="category" class="col-form-label">Category:</label>
+          <input type="text" class="form-control" id="category" [(ngModel)]="product.category">
+        </div>
+        <div class="">
+          <button (click)="productUpdate()" routerLink="/products" type="button" class="btn btn-primary">Update</button>
+        </div>
+      </div>
+
+      <div class="card col-4" *ngIf="addPro">
+        <div class="mb-3">
+          <label for="title" class="col-form-label">Title:</label>
+          <input type="text" class="form-control" id="title" [(ngModel)]="title">
+        </div>
+        <div class="mb-3">
+          <label for="description" class="col-form-label">Description:</label>
+          <input type="text" class="form-control" id="description" [(ngModel)]="description">
+        </div>
+        <div class="mb-3">
+          <label for="image" class="col-form-label">Image:</label>
+          <input type="text" class="form-control" id="image" [(ngModel)]="image">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="col-form-label">Price:</label>
+          <input type="text" class="form-control" id="price" [(ngModel)]="price">
+        </div>
+        <div class="mb-3">
+          <label for="category" class="col-form-label">Category:</label>
+          <input type="text" class="form-control" id="category" [(ngModel)]="category">
+        </div>
+        <div class="">
+          <button (click)="add()" routerLink="/products" type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
